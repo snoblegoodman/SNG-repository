@@ -1,0 +1,2683 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://stackedit.io/editor# -->
+<html manifest="cache.manifest" style="overflow: hidden;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>StackEdit – Editor</title>
+        <link rel="canonical" href="https://stackedit.io/editor">
+        <link rel="icon" href="https://stackedit.io/res-min/img/stackedit-32.ico" type="image/x-icon">
+        <link rel="icon" sizes="192x192" href="https://stackedit.io/res-min/img/logo-highres.png">
+        <link rel="shortcut icon" href="https://stackedit.io/res-min/img/stackedit-32.ico" type="image/x-icon">
+        <link rel="shortcut icon" sizes="192x192" href="https://stackedit.io/res-min/img/logo-highres.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://stackedit.io/res-min/img/logo-ipad-retina.png">
+        
+        <meta name="description" content="Full-featured, open-source Markdown editor based on PageDown, the Markdown library used by Stack Overflow and the other Stack Exchange sites.">
+        <meta name="author" content="Benoit Schweblin">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="msvalidate.01" content="5E47EE6F67B069C17E3CDD418351A612">
+        <script>
+            // Use ?debug to serve original JavaScript files instead of minified
+            window.baseDir = 'res';
+            if (!/(\?|&)debug($|&)/.test(location.search)) {
+                window.baseDir += '-min';
+            }
+            window.require = {
+                baseUrl: window.baseDir,
+                deps: ['main']
+            };
+        </script>
+        <script src="./Favorite Restaurant.md_files/require.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./Favorite Restaurant.md_files/main.js"></script><link type="text/css" rel="stylesheet" href="./Favorite Restaurant.md_files/default.css"><script type="text/x-mathjax-config;executed=true">MathJax.Hub.Config({
+	skipStartupTypeset: true,
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: [
+            "TeX"
+        ],
+        linebreaks: {
+            automatic: true
+        },
+        EqnChunk: 10,
+        imageFont: null
+    },
+    tex2jax: { inlineMath: [["$","$"],["\\\\(","\\\\)"]], displayMath: [["$$","$$"],["\\[","\\]"]], processEscapes: true },
+    TeX: $.extend({
+        noUndefined: {
+            attributes: {
+                mathcolor: "red",
+                mathbackground: "#FFEEEE",
+                mathsize: "90%"
+            }
+        },
+        Safe: {
+            allow: {
+                URLs: "safe",
+                classes: "safe",
+                cssIDs: "safe",
+                styles: "safe",
+                fontsize: "all"
+            }
+        }
+    }, undefined),
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mathjax" src="./Favorite Restaurant.md_files/MathJax.js"></script><style type="text/css">@media (min-width: 0px) {
+#wmd-input {
+   font-size: 16px;
+}
+#preview-contents {
+   font-size: 16px;
+}
+}@media (min-width: 600px) {
+#wmd-input {
+   font-size: 17px;
+}
+#preview-contents {
+   font-size: 17px;
+}
+}@media (min-width: 1200px) {
+#wmd-input {
+   font-size: 18px;
+}
+#preview-contents {
+   font-size: 18px;
+}
+}</style><style type="text/css">@keyframes working-indicator-bar0 {
+    0% { opacity:0.25; }
+    0.01% { opacity:0.25; }
+    0.02% { opacity:1; }
+    50.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}@-webkit-keyframes working-indicator-bar0 {
+    0% { opacity:0.25; }
+    0.01% { opacity:0.25; }
+    0.02% { opacity:1; }
+    50.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}@keyframes working-indicator-bar1 {
+    0% { opacity:0.25; }
+    20.01% { opacity:0.25; }
+    20.02% { opacity:1; }
+    70.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}@-webkit-keyframes working-indicator-bar1 {
+    0% { opacity:0.25; }
+    20.01% { opacity:0.25; }
+    20.02% { opacity:1; }
+    70.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}@keyframes working-indicator-bar2 {
+    0% { opacity:0.25; }
+    40.01% { opacity:0.25; }
+    40.02% { opacity:1; }
+    90.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}@-webkit-keyframes working-indicator-bar2 {
+    0% { opacity:0.25; }
+    40.01% { opacity:0.25; }
+    40.02% { opacity:1; }
+    90.01% { opacity:0.25; }
+    100% { opacity:0.25; }
+}</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><script charset="utf-8" src="./Favorite Restaurant.md_files/button.550007e6cc79c00bac51111d8131d860.js"></script><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+    <body class=" ltr" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden;"><div id="MathJax_Message" style="display: none;"></div><div class="layout-wrapper-l1" style="transform: translate(-280px, 0px); width: 1702px; height: 627px;">
+	<div class="layout-wrapper-l2" style="left: 280px; width: 1422px; height: 627px;">
+		<div class="navbar navbar-default">
+			<div class="navbar-inner">
+				<div class="nav left-space"></div>
+				<div class="nav right-space pull-right"></div>
+				<div class="buttons-dropdown dropdown hide">
+		    		<div class="nav">
+		        		<button class="btn btn-success" data-toggle="dropdown" title="Show buttons">
+		            		<i class="icon-th-large"></i>
+		            	</button>
+		    		    <div class="dropdown-menu">
+		        		</div>
+		        	</div>
+				</div>
+				
+				
+				
+				
+				
+				
+				<ul class="nav pull-right right-buttons">
+					<li class="offline-status hide">
+					    <div class="text-danger">
+					        <i class="icon-attention-circled"></i>offline
+					    </div>
+					</li>
+					<li class="extension-buttons"><div class="btn-group"><a class="btn btn-success button-synchronize disabled" title="Force synchronization Ctrl/Cmd+S"><i class="icon-refresh"></i></a></div><div class="btn-group"><a class="btn btn-success button-publish disabled" title="Update document publication"><i class="icon-upload"></i></a></div></li>
+				</ul><ul class="nav left-buttons">
+					<li class="wmd-button-group1 btn-group"><li class="wmd-button btn btn-success" id="wmd-bold-button" title="Strong &lt;strong&gt; Ctrl/Cmd+B" style="left: 0px;"><span style="background-position: 0px 0px; display: none;"></span><i class="icon-bold"></i></li><li class="wmd-button btn btn-success" id="wmd-italic-button" title="Emphasis &lt;em&gt; Ctrl/Cmd+I" style="left: 0px;"><span style="background-position: -20px 0px; display: none;"></span><i class="icon-italic"></i></li></li>
+				</ul><ul class="nav left-buttons">
+					<li class="wmd-button-group2 btn-group"><li class="wmd-button btn btn-success" id="wmd-link-button" title="Hyperlink &lt;a&gt; Ctrl/Cmd+L" style="left: 0px;"><span style="background-position: -40px 0px; display: none;"></span><i class="icon-globe"></i></li><li class="wmd-button btn btn-success" id="wmd-quote-button" title="Blockquote &lt;blockquote&gt; Ctrl/Cmd+Q" style="left: 0px;"><span style="background-position: -60px 0px; display: none;"></span><i class="icon-indent-right"></i></li><li class="wmd-button btn btn-success" id="wmd-code-button" title="Code Sample &lt;pre&gt;&lt;code&gt; Ctrl/Cmd+K" style="left: 0px;"><span style="background-position: -80px 0px; display: none;"></span><i class="icon-code"></i></li><li class="wmd-button btn btn-success" id="wmd-image-button" title="Image &lt;img&gt; Ctrl/Cmd+G" style="left: 0px;"><span style="background-position: -100px 0px; display: none;"></span><i class="icon-picture"></i></li></li>
+				</ul><ul class="nav left-buttons">
+					<li class="wmd-button-group3 btn-group"><li class="wmd-button btn btn-success" id="wmd-olist-button" title="Numbered List &lt;ol&gt; Ctrl/Cmd+O" style="left: 0px;"><span style="background-position: -120px 0px; display: none;"></span><i class="icon-list-numbered"></i></li><li class="wmd-button btn btn-success" id="wmd-ulist-button" title="Bulleted List &lt;ul&gt; Ctrl/Cmd+U" style="left: 0px;"><span style="background-position: -140px 0px; display: none;"></span><i class="icon-list-bullet"></i></li><li class="wmd-button btn btn-success" id="wmd-heading-button" title="Heading &lt;h1&gt;/&lt;h2&gt; Ctrl/Cmd+H" style="left: 0px;"><span style="background-position: -160px 0px; display: none;"></span><i class="icon-text-height"></i></li><li class="wmd-button btn btn-success" id="wmd-hr-button" title="Horizontal Rule &lt;hr&gt; Ctrl/Cmd+R" style="left: 0px;"><span style="background-position: -180px 0px; display: none;"></span><i class="icon-ellipsis"></i></li></li>
+				</ul><ul class="nav left-buttons">
+					<li class="wmd-button-group5 btn-group"><li class="wmd-button btn btn-success" id="wmd-undo-button" title="Undo - Ctrl/Cmd+Z" style="left: 0px;"><span style="background-position: -200px 0px; display: none;"></span><i class="icon-reply"></i></li><li class="wmd-button btn btn-success disabled" id="wmd-redo-button" title="Redo - Ctrl/Cmd+Y" style="left: 0px;"><span style="background-position: -220px -20px; display: none;"></span><i class="icon-forward"></i></li></li>
+				</ul><ul class="nav left-buttons">
+					<li class="wmd-button-group4 btn-group">
+						<a class="btn btn-success button-open-discussion" title="Comments Ctrl/Cmd+M"><i class="icon-comment-alt"></i></a>
+					</li>
+				</ul><ul class="nav pull-right title-container">
+					<li><div class="working-indicator"><div class="hide"><div class="bar" style="animation: 0.7s linear 0s infinite normal none running working-indicator-bar0;"></div><div class="bar" style="animation: 0.7s linear 0s infinite normal none running working-indicator-bar1;"></div><div class="bar" style="animation: 0.7s linear 0s infinite normal none running working-indicator-bar2;"></div></div></div></li>
+					<li><a class="btn btn-success file-title-navbar" href="https://stackedit.io/editor#" title="Rename document" style="max-width: 540px;">My Favorite Restaurant</a></li>
+					<li><div class="input-file-title-container"><input type="text" class="col-sm-4 form-control input-file-title hide" placeholder="Document title" style="max-width: 540px;"></div></li>
+				</ul>
+			</div>
+		<div><div data-toggle="dropdown"></div><ul class="dropdown-menu dropdown-file-selector"><li class="disabled" data-file-index="file.ZS8AB6pDnHhXaIpECgZSKtpY">   <a href="https://stackedit.io/editor#">       My Favorite Restaurant   </a></li><li class="" data-file-index="file.Ouw50YzFsoK1Ylaq8iaJUVHl">   <a href="https://stackedit.io/editor#">       Hello!   </a></li></ul></div></div>
+		<div class="layout-wrapper-l3" style="top: 50px; width: 1422px; height: 577px;">
+			<pre id="wmd-input" class="form-control font-rich" style="width: 695px; height: 577px;"><div class="editor-content" contenteditable="true" style="padding-left: 35px; padding-right: 35px; padding-bottom: 517px;"><span id="wmd-input-section-460" class="wmd-input-section"><span class="token lf">
+</span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token blockquote"><span class="token md md-gt">&gt; </span>Written with <span class="token link"><span class="token md md-bracket-start">[</span><span class="token md md-underlined-text">StackEdit</span><span class="token md md-bracket-end">](</span><span class="token md md-href">https://stackedit.io/</span><span class="token md md-paren-end">)</span></span>.</span><span class="token lf">
+</span><span class="token blockquote"><span class="token md md-gt">&gt; </span># My Favorite Restaurant</span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token p">Well, that's easy.  My favorite restaurant is Cuca's Mexican Cantina in Redlands, California.  Their secret is fresh ingredients, and grandma's recipes.  Some of my favorites are: </span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token li"><span class="token md md-li">* </span>veggie burrito<span class="token lf">
+</span></span><span class="token li"><span class="token md md-li">* </span>veggie taco<span class="token lf">
+</span></span><span class="token li"><span class="token md md-li">* </span>rice and beans<span class="token lf">
+</span></span><span class="token li"><span class="token md md-li">* </span>veggie fajitas<span class="token lf">
+</span><span class="token lf">
+</span></span><span class="token p">To get there, you have to:</span><span class="token lf">
+</span><span class="token li"><span class="token md md-li">1. </span>Take I-10 to the Redlands exit<span class="token lf">
+</span></span><span class="token li"><span class="token md md-li">2. </span>Turn <span class="token em"><span class="token md md-em md-start">_</span>right<span class="token md md-em md-close">_</span></span> on Redlands Blvd.<span class="token lf">
+</span></span><span class="token li"><span class="token md md-li">3. </span>Turn <span class="token em"><span class="token md md-em md-start">_</span>left<span class="token md md-em md-close">_</span></span> on Ochoa<span class="token lf">
+</span></span><span class="token li"><span class="token md md-li">4. </span>Turn <span class="token em"><span class="token md md-em md-start">_</span>right<span class="token md md-em md-close">_</span></span> on 12th<span class="token lf">
+</span><span class="token lf">
+</span></span><span class="token p">It will be on your <span class="token em"><span class="token md md-em md-start">_</span>right<span class="token md md-em md-close">_</span></span>.</span></span><span class="token lf">
+</span></div><div class="editor-margin" style="width: 35px;"><a class="discussion icon-comment new" style="top: 440px; right: 12px;"></a></div></pre>
+			<div class="preview-panel" style="transform: translate(695px, 0px); width: 727px; height: 577px;">
+				<div class="layout-resizer layout-resizer-preview open" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: pan-y; height: 577px;"></div>
+				<div class="layout-toggler layout-toggler-navbar btn btn-info open" title="Toggle navigation bar" style="height: 60px;"><i class="icon-th"></i></div>
+				<div class="layout-toggler layout-toggler-preview btn btn-info open" title="Toggle preview" style="transform: translate(0px, 258.5px); height: 60px;"><i class="icon-none"></i></div>
+				<div class="preview-container" style="left: 32px; width: 695px; height: 577px;">
+					<div id="preview-contents" style="padding-left: 35px; padding-right: 35px; padding-bottom: 517px;">
+						<div id="wmd-preview" class="preview-content"></div>
+					<div id="wmd-preview-section-460" class="wmd-preview-section preview-content">
+
+<blockquote>
+  <p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+  
+  <h1 id="my-favorite-restaurant">My Favorite Restaurant</h1>
+</blockquote>
+
+<p>Well, that’s easy.  My favorite restaurant is Cuca’s Mexican Cantina in Redlands, California.  Their secret is fresh ingredients, and grandma’s recipes.  Some of my favorites are: </p>
+
+<ul>
+<li>veggie burrito</li>
+<li>veggie taco</li>
+<li>rice and beans</li>
+<li>veggie fajitas</li>
+</ul>
+
+<p>To get there, you have to: <br>
+1. Take I-10 to the Redlands exit <br>
+2. Turn <em>right</em> on Redlands Blvd. <br>
+3. Turn <em>left</em> on Ochoa <br>
+4. Turn <em>right</em> on 12th</p>
+
+<p>It will be on your <em>right</em>.</p></div><div id="wmd-preview-section-footnotes" class="preview-content"></div></div>
+				</div>
+			</div>
+		</div>
+		<div class="extension-preview-buttons closed animate" style="user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: pan-y; transform: translate(232px, -6px);">
+			<div class="btn-group drag-me dropup" title="Drag me!">
+				<i class="icon-ellipsis-vert"></i>
+			</div>
+		<div class="btn-group dropup"><button class="btn btn-success dropdown-toggle button-markdown-syntax" title="Markdown syntax" data-toggle="dropdown">
+	<i class="icon-help-circled"></i>
+</button>
+<div class="dropdown-menu pull-right">
+	<h3>Markdown syntax</h3>
+    <hr>
+	<div class="markdown-syntax">
+<h4>Phrase Emphasis</h4>
+
+<pre><code>*italic*   **bold**
+_italic_   __bold__
+</code></pre>
+
+<h4>Links</h4>
+
+<p>Inline:</p>
+
+<pre><code>An [example](http://url.com/ "Title")
+</code></pre>
+
+<p>Reference-style labels (titles are optional):</p>
+
+<pre><code>An [example][id]. Then, anywhere
+else in the doc, define the link:
+
+  [id]: http://example.com/  "Title"
+</code></pre>
+
+<h4>Images</h4>
+
+<p>Inline (titles are optional):</p>
+
+<pre><code>![alt text](/path/img.jpg "Title")
+</code></pre>
+
+<p>Reference-style:</p>
+
+<pre><code>![alt text][id]
+
+[id]: /url/to/img.jpg "Title"
+</code></pre>
+
+<h4>Headers</h4>
+
+<p>Setext-style:</p>
+
+<pre><code>Header 1
+========
+
+Header 2
+--------
+</code></pre>
+
+<p>atx-style (closing #'s are optional):</p>
+
+<pre><code># Header 1 #
+
+## Header 2 ##
+
+###### Header 6
+</code></pre>
+
+<h4>Lists</h4>
+
+<p>Ordered, without paragraphs:</p>
+
+<pre><code>1.  Foo
+2.  Bar
+</code></pre>
+
+<p>Unordered, with paragraphs:</p>
+
+<pre><code>*   A list item.
+
+    With multiple paragraphs.
+
+*   Bar
+</code></pre>
+
+<p>You can nest them:</p>
+
+<pre><code>*   Abacus
+    * answer
+*   Bubbles
+    1.  bunk
+    2.  bupkis
+        * BELITTLER
+    3. burper
+*   Cunning
+</code></pre>
+
+<h4>Blockquotes</h4>
+
+<pre><code>&gt; Email-style angle brackets
+&gt; are used for blockquotes.
+
+&gt; &gt; And, they can be nested.
+
+&gt; #### Headers in blockquotes
+&gt;
+&gt; * You can quote a list.
+&gt; * Etc.
+</code></pre>
+
+<h4>Code Spans</h4>
+
+<pre><code>`&lt;code&gt;` spans are delimited
+by backticks.
+
+You can include literal backticks
+like `` `this` ``.
+</code></pre>
+
+<h4>Preformatted Code Blocks</h4>
+
+<p>Indent every line of a code block by at least 4 spaces or 1 tab.</p>
+
+<pre><code>This is a normal paragraph.
+
+    This is a preformatted
+    code block.
+</code></pre>
+
+<h4>Horizontal Rules</h4>
+
+<p>Three or more dashes or asterisks:</p>
+
+<pre><code>---
+
+* * *
+
+- - - -
+</code></pre>
+
+<h4>Manual Line Breaks</h4>
+
+<p>End a line with two or more spaces:</p>
+
+<pre><code>Roses are red,
+Violets are blue.
+</code></pre>
+
+<blockquote>Based on the <a target="_blank" href="https://github.com/fletcher/MultiMarkdown/blob/master/Documentation/Markdown%20Syntax.md">Markdown syntax guide</a>, by Fletcher T. Penney.</blockquote>
+    </div>
+    <hr>
+</div>
+</div><div class="btn-group dropup"><button class="btn btn-success dropdown-toggle" title="Table of contents" data-toggle="dropdown">
+    <i class="icon-list"></i>
+</button>
+<div class="dropdown-menu pull-right">
+    <h3>Table of contents</h3>
+    <hr>
+    <div class="table-of-contents"><div class="toc">
+<ul>
+<li><a href="https://stackedit.io/editor#my-favorite-restaurant">My Favorite Restaurant</a></li>
+</ul>
+</div>
+</div>
+    <hr>
+</div>
+</div><div class="btn-group dropup"><button class="btn btn-success dropdown-toggle stat-button" title="Document statistics" data-toggle="dropdown">
+	<i class="icon-chart-bar"></i>
+	<span class="value">368</span>
+</button>
+<div class="dropdown-menu pull-right stat-button-dropdown">
+	<h3>Statistics</h3>
+    <hr>
+	<div class="stat">
+		<div>
+			Characters: <span class="value1">368</span>
+		</div>
+		<div>
+			Words: <span class="value2">76</span>
+		</div>
+		<div>
+			Paragraphs: <span class="value3">13</span>
+		</div>
+	</div>
+</div>
+</div><div class="btn-group dropup"><button class="btn btn-success dropdown-toggle action-html-code" title="HTML code" data-toggle="dropdown">
+	<i class="icon-code"></i>
+</button>
+<div class="dropdown-menu pull-right">
+	<h3>HTML code</h3>
+	<textarea id="input-html-code" class="form-control"></textarea>
+</div>
+</div><div class="btn-group dropup"><a href="https://stackedit.io/viewer" class="btn btn-success dropdown-toggle" title="Open in viewer">
+	<i class="icon-resize-full"></i>
+</a>
+</div></div>
+	<div class="find-replace" style="display: none;"><button type="button" class="close button-find-replace-dismiss">×</button>
+<div class="form-inline">
+    <div class="form-group">
+        <label for="input-find-replace-search-for">Search for</label>
+        <input class="form-control" id="input-find-replace-search-for" placeholder="Search for">
+    </div>
+    <div class="form-group">
+        <label for="input-find-replace-replace-with">Replace with</label>
+        <input class="form-control" id="input-find-replace-replace-with" placeholder="Replace with">
+    </div>
+</div>
+<div class="pull-right">
+    <div class="help-block text-right">
+        <span class="found-counter">0</span> found
+    </div>
+    <div>
+        <button type="button" class="btn btn-primary search-button">Search</button>
+        <button type="button" class="btn btn-default replace-button">Replace</button>
+        <button type="button" class="btn btn-default replace-all-button">All</button>
+    </div>
+</div>
+<div class="pull-left">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" class="checkbox-case-sensitive"> Case sensitive
+        </label>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" class="checkbox-regexp"> Regular expression
+        </label>
+    </div>
+</div>
+</div></div>
+	<div id="wmd-button-bar" class="hide"><ul id="wmd-button-row" class="wmd-button-row"><li class="wmd-spacer wmd-spacer1 btn btn-success" id="wmd-spacer1" style="left: 0px;"></li><li class="wmd-spacer wmd-spacer2 btn btn-success" id="wmd-spacer2" style="left: 0px;"></li><li class="wmd-spacer wmd-spacer3 btn btn-success" id="wmd-spacer3" style="left: 0px;"></li></ul></div>
+
+	<div class="menu-panel">
+		<button class="btn toggle-button" title="Menu">
+			<img data-stackedit-src="menu-icon.png" width="24" height="24" src="./Favorite Restaurant.md_files/menu-icon.png">
+		</button>
+		<div class="panel-content">
+			<div class="list-group">
+
+				<a href="https://stackedit.io/viewer" title="StackEdit Viewer" class="list-group-item">
+					<i class="icon-resize-full"></i> StackEdit Viewer
+				</a>
+
+			</div>
+			<div class="list-group">
+
+				<a href="https://stackedit.io/editor#" data-toggle="collapse" data-target=".collapse-synchronize" class="list-group-item">
+					<div><i class="icon-refresh"></i> Synchronize</div>
+					<small>Open, save, collaborate in the Cloud</small>
+				</a>
+				<div class="sub-menu collapse collapse-synchronize clearfix">
+					<ul class="nav alert alert-danger show-already-synchronized hide">
+						<li><div>"<span class="file-title">My Favorite Restaurant</span>" is already synchronized.</div></li>
+						<li><a href="https://stackedit.io/editor#" class="action-force-synchronization"><i class="icon-refresh"></i>
+							Force synchronization</a></li>
+	                    <li><a href="https://stackedit.io/editor#" data-toggle="modal" data-target=".modal-manage-sync" class="action-reset-input"><i class="icon-refresh"></i> Manage synchronization</a></li>
+	                </ul>
+					<ul class="nav">
+						<li><a href="https://stackedit.io/editor#" class="action-sync-import-dialog-couchdb"><i class="icon-provider-couchdb"></i> Open from CouchDB <sup class="text-danger">new</sup></a></li>
+						<li><a href="https://stackedit.io/editor#" class="action-sync-export-dialog-couchdb"><i class="icon-provider-couchdb"></i> Save on CouchDB <sup class="text-danger">new</sup></a></li>
+						<li><a href="https://stackedit.io/editor#" class="action-sync-import-dropbox"><i class="icon-provider-dropbox"></i> Open from Dropbox</a></li>
+						<li><a href="https://stackedit.io/editor#" class="action-sync-export-dialog-dropbox"><i class="icon-provider-dropbox"></i> Save on Dropbox</a></li>
+						<li><a href="https://stackedit.io/editor#" class="submenu-sync-gdrive action-sync-import-gdrive"><i class="icon-provider-gdrive"></i> Open from Google Drive</a></li>
+						<li><a href="https://stackedit.io/editor#" class="submenu-sync-gdrive action-sync-export-dialog-gdrive"><i class="icon-provider-gdrive"></i> Save on Google Drive</a></li>
+						<li><a href="https://stackedit.io/editor#" class="submenu-sync-gdrivesec action-sync-import-gdrivesec" style="display: none;"><i class="icon-provider-gdrive"></i> Open from Google Drive<br><small>(2nd account)</small></a></li>
+						<li><a href="https://stackedit.io/editor#" class="submenu-sync-gdrivesec action-sync-export-dialog-gdrivesec" style="display: none;"><i class="icon-provider-gdrive"></i> Save on Google Drive<br><small>(2nd account)</small></a></li>
+						<li><a href="https://stackedit.io/editor#" class="submenu-sync-gdriveter action-sync-import-gdriveter" style="display: none;"><i class="icon-provider-gdrive"></i> Open from Google Drive<br><small>(3rd account)</small></a></li>
+						<li><a href="https://stackedit.io/editor#" class="submenu-sync-gdriveter action-sync-export-dialog-gdriveter" style="display: none;"><i class="icon-provider-gdrive"></i> Save on Google Drive<br><small>(3rd account)</small></a></li>
+					</ul>
+				</div>
+				<a href="https://stackedit.io/editor#" data-toggle="collapse" data-target=".collapse-publish-on" class="list-group-item">
+					<div><i class="icon-upload"></i>Publish</div>
+					<small>Export to the web</small>
+				</a>
+				<div class="sub-menu collapse collapse-publish-on clearfix">
+					<ul class="nav alert alert-danger show-already-published hide">
+	                    <li><div>"<span class="file-title">My Favorite Restaurant</span>" is already published.</div></li>
+	                    <li><a href="https://stackedit.io/editor#" class="action-update-publication"><i class="icon-upload"></i>
+	                        Update publication</a></li>
+	                    <li><a href="https://stackedit.io/editor#" data-toggle="modal" data-target=".modal-manage-publish" class="action-reset-input"><i class="icon-upload"></i>
+	                        Manage publication</a></li>
+					</ul>
+					<ul class="nav publish-on-provider-list"><li>   <a href="https://stackedit.io/editor#" class="action-init-publish-blogger">       <i class="icon-provider-blogger"></i> Blogger   </a></li><li>   <a href="https://stackedit.io/editor#" class="action-init-publish-bloggerpage">       <i class="icon-provider-bloggerpage"></i> Blogger Page   </a></li><li>   <a href="https://stackedit.io/editor#" class="action-init-publish-dropbox">       <i class="icon-provider-dropbox"></i> Dropbox   </a></li><li>   <a href="https://stackedit.io/editor#" class="action-init-publish-gist">       <i class="icon-provider-gist"></i> Gist   </a></li><li>   <a href="https://stackedit.io/editor#" class="action-init-publish-github">       <i class="icon-provider-github"></i> GitHub   </a></li><li>   <a href="https://stackedit.io/editor#" class="action-init-publish-gdrive">       <i class="icon-provider-gdrive"></i> Google Drive   </a></li><li>   <a href="https://stackedit.io/editor#" class="action-init-publish-ssh">       <i class="icon-provider-ssh"></i> SSH server   </a></li><li>   <a href="https://stackedit.io/editor#" class="action-init-publish-tumblr">       <i class="icon-provider-tumblr"></i> Tumblr   </a></li><li>   <a href="https://stackedit.io/editor#" class="action-init-publish-wordpress">       <i class="icon-provider-wordpress"></i> WordPress   </a></li></ul>
+				</div>
+				<a href="https://stackedit.io/editor#" data-toggle="modal" data-target=".modal-manage-sharing" class="action-reset-input list-group-item">
+					<div><i class="icon-link"></i>Sharing</div>
+					<small>Share document links</small>
+				</a>
+			</div>
+			<div class="list-group">
+
+				<a data-toggle="modal" data-target=".modal-import-harddrive-markdown" class="list-group-item action-reset-input" href="https://stackedit.io/editor#"><i class="icon-hdd"></i> Import from disk</a>
+				<a href="https://stackedit.io/editor#" data-toggle="collapse" data-target=".collapse-save-as" class="list-group-item"><i class="icon-hdd"></i> Export to disk</a>
+				<div class="sub-menu collapse collapse-save-as clearfix">
+					<ul class="nav">
+						<li><a class="action-download-md" href="https://stackedit.io/editor#"><i class="icon-download"></i> As Markdown</a></li>
+						<li><a class="action-download-html" href="https://stackedit.io/editor#"><i class="icon-download"></i> As HTML</a></li>
+						<li><a class="action-download-template" href="https://stackedit.io/editor#"><i class="icon-download"></i> Using template</a></li>
+						<li><a class="action-download-pdf" href="https://stackedit.io/editor#"><i class="icon-download"></i> As PDF <sup class="text-danger">sponsor</sup></a></li>
+					</ul>
+				</div>
+
+	            <a data-toggle="modal" data-target=".modal-import-url" class="list-group-item action-reset-input" href="https://stackedit.io/editor#"><i class="icon-globe"></i> Import from URL</a>
+	            <a data-toggle="modal" data-target=".modal-import-harddrive-html" class="list-group-item action-reset-input" href="https://stackedit.io/editor#"><i class="icon-code"></i> Convert HTML to Markdown</a>
+			</div>
+			<ul class="nav">
+				<li><a href="https://stackedit.io/editor#" data-toggle="modal" data-target=".modal-settings" class="action-load-settings"><i class="icon-cog"></i> Settings</a></li>
+				<li><a href="https://stackedit.io/editor#" data-toggle="modal" data-target=".modal-about"><i class="icon-help-circled"></i> About</a></li>
+			</ul>
+
+		</div>
+	</div>
+
+
+	<div class="document-panel" style="right: -320px;">
+		<button class="btn toggle-button" title="Select document Ctrl+[ Ctrl+]">
+			<i class="icon-folder-open"></i>
+		</button>
+		<div class="search-bar clearfix">
+			<ul class="nav">
+				<li><a href="https://stackedit.io/editor#" class="action-create-file"><i class="icon-file"></i> New document</a></li>
+				<li><a href="https://stackedit.io/editor#" class="action-remove-file-confirm"><i class="icon-trash"></i> Delete document</a></li>
+				<li><a href="https://stackedit.io/editor#" data-toggle="modal" data-target=".modal-document-manager"><i class="icon-layers"></i> Manage documents</a></li>
+	        </ul>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="icon-search"></i></span><input type="text" class="form-control" placeholder="Find document" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAmJJREFUWAntV7uKIkEUvbYGM4KID3wEIgjKRLLpKGLgFwiCfslGhkb7IbLgAzE1GhMxWxRRBEEwmEgDERWfW6fXuttq60a2wU6B1qlzb9U5fatsKROJVigUArvd7oeAyePx6Af3qGYymT7F2h8Wi+V7Pp+fmE7iv4Sw81GieusKIzNh4puCJzdaHIagCW1F4KSeQ4O4pPLoPb/3INBGBZ7avgz8fxWIxWIUCoX43Blegbe3NwoGg88zwMoncFUB8Yokj8dDdrv9MpfHVquV/H4/iVcpc1qgKAp5vV6y2WxaWhefreB0OimXy6kGkD0YDKhSqdB2u+XJqVSK4vE4QWS5XKrx0WjEcZ/PR9lslhwOh8p1Oh2q1Wp0OBw4RwvOKpBOp1kcSdivZPLvmxrjRCKhiiOOSmQyGXp5ecFQbRhLcRDRaJTe39//BHW+2cDr6ysFAoGrlEgkwpwWS1I7z+VykdvtliHuw+Ew40vABvb7Pf6hLuMk/rGY02ImBZC8dqv04lpOYjaw2WzUPZcB2WMPZet2u1cmZ7MZTSYTNWU+n9N4PJbp3GvXYPIE2ADG9Xqder2e+kTr9ZqazSa1222eA6FqtUoQwqHCuFgscgWQWC6XaTgcEiqKQ9poNOiegbNfwWq1olKppB6yW6cWVcDHbDarIuzuBBaLhWrqVvwy/6wCMnhLXMbR4wnvtX/F5VxdAzJoRH+2BUYItlotmk6nLGW4gX6/z+IAT9+CLwPPr8DprnZ2MIwaQBsV+DBKUEfnQ8EtFRdFneBDKWhCW8EVGbdUQfxESR6qKhaHBrSgCe3fbLTpPlS70M0AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+			</div>
+		</div>
+		<div class="panel-content">
+			<div class="list-group document-list"><ul class="nav"><li><a href="https://stackedit.io/editor#" class="list-group-item file" data-file-index="file.Ouw50YzFsoK1Ylaq8iaJUVHl">   Hello!</a></li><li><a href="https://stackedit.io/editor#" class="list-group-item file active" data-file-index="file.ZS8AB6pDnHhXaIpECgZSKtpY">   My Favorite Restaurant</a></li></ul></div>
+			<div class="list-group document-list-filtered hide"><ul class="nav"><li><a href="https://stackedit.io/editor#" class="list-group-item file" data-file-index="file.Ouw50YzFsoK1Ylaq8iaJUVHl">   Hello!</a></li><li><a href="https://stackedit.io/editor#" class="list-group-item file active" data-file-index="file.ZS8AB6pDnHhXaIpECgZSKtpY">   My Favorite Restaurant</a></li></ul></div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade modal-document-manager">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Manage documents</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<div></div>
+				<ul class="nav nav-pills document-list">
+					<li class="pull-right dropdown"><a href="https://stackedit.io/editor#" data-toggle="dropdown"><i class="icon-check"></i> Selection <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="https://stackedit.io/editor#" class="action-select-all"><i class="icon-check"></i> Select all</a></li>
+							<li><a href="https://stackedit.io/editor#" class="action-unselect-all"><i class="icon-check-empty"></i> Unselect all</a></li>
+							<li class="divider"></li>
+							<li><a href="https://stackedit.io/editor#" class="action-move-items"><i class="icon-forward"></i> Move to folder</a></li>
+							<li><a href="https://stackedit.io/editor#" class="action-delete-items"><i class="icon-trash"></i> Delete</a></li>
+						</ul></li>
+					<li class="pull-right"><a href="https://stackedit.io/editor#" class="action-create-folder"> <i class="icon-folder"></i>
+							Create folder
+					</a></li>
+					<li class="disabled"><a><i class="icon-file"></i> <span class="document-count"></span></a></li>
+					<li class="disabled"><a><i class="icon-folder"></i> <span class="folder-count"></span></a></li>
+				</ul>
+				<div class="list-group document-list"></div>
+				<p class="confirm-delete hide">The following documents will be
+					deleted locally:</p>
+				<p class="choose-folder hide">Please choose a destination
+					folder:</p>
+				<div class="list-group selected-document-list hide"></div>
+				<div class="list-group select-folder-list hide"></div>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default confirm-delete choose-folder action-cancel hide">Cancel</a>
+				<a href="https://stackedit.io/editor#" class="btn btn-primary confirm-delete action-delete-items-confirm hide">OK</a>
+				<a href="https://stackedit.io/editor#" class="btn btn-primary document-list" data-dismiss="modal">Close</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-insert-link">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Hyperlink</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>Please provide the link URL and an optional title:</p>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="icon-globe"></i></span><input id="input-insert-link" type="text" class="col-sm-5 form-control" placeholder="http://example.com/ &quot;optional title&quot;">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+				<a href="https://stackedit.io/editor#" class="btn btn-primary action-insert-link" data-dismiss="modal">OK</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-insert-image">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Image</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>Please provide the image URL and an optional title:</p>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="icon-picture"></i></span><input id="input-insert-image" type="text" class="col-sm-5 form-control" placeholder="http://example.com/image.jpg &quot;optional title&quot;">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default pull-left action-import-image-gplus" data-dismiss="modal"><i class="icon-provider-gplus"></i> Import
+					from Google+</a> <a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a> <a href="https://stackedit.io/editor#" class="btn btn-primary action-insert-image" data-dismiss="modal">OK</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-import-image">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Google+ image import</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<div class="form-horizontal">
+					<div class="form-group">
+						<div class="col-sm-7">
+							<img>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label" for="input-import-image-title">Title (optional)</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-import-image-title" placeholder="Image title" class="form-control">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label" for="input-import-image-size">Size limit (optional)</label>
+						<div class="col-sm-7 form-inline">
+							<input type="text" id="input-import-image-size" placeholder="0" class="col-sm-3 form-control"> px
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+				<a href="https://stackedit.io/editor#" class="btn btn-primary action-import-image" data-dismiss="modal">OK</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-remove-file-confirm">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Delete</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>
+					Are you sure you want to delete "<span class="file-title">My Favorite Restaurant</span>"?
+				</p>
+				<blockquote>
+					<p><b>Note:</b> It won't delete the file on synchronized locations.</p>
+				</blockquote>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+				<a href="https://stackedit.io/editor#" class="btn btn-primary action-remove-file" data-dismiss="modal">Delete</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-import-url">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Import from URL</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>Please provide a link to a Markdown document.</p>
+				<div class="form-horizontal">
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="input-import-url">URL</label>
+						<div class="col-sm-8">
+							<input type="text" id="input-import-url" placeholder="http://www.abc.com/xyz.md" class="form-control">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+				<a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-import-url">OK</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-import-harddrive-markdown">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Import from disk</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>Please select your Markdown files here:</p>
+				<p>
+					<input type="file" id="input-file-import-harddrive-markdown" multiple="" class="form-control">
+				</p>
+				<p>Or drag and drop your Markdown files here:</p>
+				<p id="dropzone-import-harddrive-markdown" class="drop-zone">Drop
+					files here</p>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-primary" data-dismiss="modal">Close</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-import-harddrive-html">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Convert HTML to Markdown</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>Please select your HTML files here:</p>
+				<p>
+					<input type="file" id="input-file-import-harddrive-html" multiple="" class="form-control">
+				</p>
+				<p>Or drag and drop your HTML files here:</p>
+				<p id="dropzone-import-harddrive-html" class="drop-zone">Drop
+					files here</p>
+				<p>Or insert your HTML code here:</p>
+				<textarea id="input-convert-html" class="form-control"></textarea>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Close</a> <a href="https://stackedit.io/editor#" class="btn btn-primary action-convert-html" data-dismiss="modal">OK</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-upload-gdrive"><div class="modal-dialog">
+	<div class="modal-content">
+
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h2 class="modal-title">Save on Google Drive</h2>
+		</div>
+		<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+			<p>
+				This will save "<span class="file-title">My Favorite Restaurant</span>" to your <i class="icon-provider-gdrive"></i>
+				<b>Google Drive</b>
+				account and keep it synchronized.
+			</p>
+			<div class="collapse form-horizontal sync-export-gdrive-options-collapse">
+				<div class="form-group">
+					<label class="col-lg-3 control-label" for="input-sync-export-gdrive-parentid">Folder ID
+						(optional)</label>
+					<div class="col-lg-8">
+                        <input type="text" id="input-sync-export-gdrive-parentid" placeholder="FolderID" class="form-control">
+                        <div class="text-right">
+                            <a class="btn btn-link btn-sm action-export-gdrive-choose-folder" title="Choose folder" data-dismiss="modal"><i class="icon-folder-open"></i> Open folder</a>
+                        </div>
+						<span class="help-block"> If no folder ID is supplied, the
+							file will be created in your root folder. </span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-lg-3 control-label" for="input-sync-export-gdrive-fileid">Existing file ID
+						(optional)</label>
+					<div class="col-lg-8">
+						<input type="text" id="input-sync-export-gdrive-fileid" placeholder="FileID" class="form-control"> <span class="help-block"> This will overwrite the existing file
+							on the server. </span>
+					</div>
+				</div>
+			</div>
+			<p class="align-right">
+				<a href="https://stackedit.io/editor#" data-toggle="collapse" data-target=".sync-export-gdrive-options-collapse" class="collapsed">
+					Options <i class="icon-up-dir"></i>
+				</a>
+			</p>
+			<blockquote>
+				<p><b>Tip:</b> You can move or rename the file afterwards within Google
+						Drive.</p>
+			</blockquote>
+		</div>
+		<div class="modal-footer">
+			<a href="https://stackedit.io/editor#" class="btn btn-default pull-left action-autosync-dialog-gdrive" data-dismiss="modal"><i class="icon-provider-gdrive"></i> Setup AutoSync</a>
+			<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+			<a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-sync-export-gdrive">OK</a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="modal fade modal-upload-gdrivesec"><div class="modal-dialog">
+	<div class="modal-content">
+
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h2 class="modal-title">Save on Google Drive (2nd account)</h2>
+		</div>
+		<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+			<p>
+				This will save "<span class="file-title">My Favorite Restaurant</span>" to your <i class="icon-provider-gdrivesec"></i>
+				<b>Google Drive</b>
+				account and keep it synchronized.
+			</p>
+			<div class="collapse form-horizontal sync-export-gdrivesec-options-collapse">
+				<div class="form-group">
+					<label class="col-lg-3 control-label" for="input-sync-export-gdrivesec-parentid">Folder ID
+						(optional)</label>
+					<div class="col-lg-8">
+                        <input type="text" id="input-sync-export-gdrivesec-parentid" placeholder="FolderID" class="form-control">
+                        <div class="text-right">
+                            <a class="btn btn-link btn-sm action-export-gdrivesec-choose-folder" title="Choose folder" data-dismiss="modal"><i class="icon-folder-open"></i> Open folder</a>
+                        </div>
+						<span class="help-block"> If no folder ID is supplied, the
+							file will be created in your root folder. </span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-lg-3 control-label" for="input-sync-export-gdrivesec-fileid">Existing file ID
+						(optional)</label>
+					<div class="col-lg-8">
+						<input type="text" id="input-sync-export-gdrivesec-fileid" placeholder="FileID" class="form-control"> <span class="help-block"> This will overwrite the existing file
+							on the server. </span>
+					</div>
+				</div>
+			</div>
+			<p class="align-right">
+				<a href="https://stackedit.io/editor#" data-toggle="collapse" data-target=".sync-export-gdrivesec-options-collapse" class="collapsed">
+					Options <i class="icon-up-dir"></i>
+				</a>
+			</p>
+			<blockquote>
+				<p><b>Tip:</b> You can move or rename the file afterwards within Google
+						Drive.</p>
+			</blockquote>
+		</div>
+		<div class="modal-footer">
+			<a href="https://stackedit.io/editor#" class="btn btn-default pull-left action-autosync-dialog-gdrivesec" data-dismiss="modal"><i class="icon-provider-gdrive"></i> Setup AutoSync</a>
+			<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+			<a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-sync-export-gdrivesec">OK</a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="modal fade modal-upload-gdriveter"><div class="modal-dialog">
+	<div class="modal-content">
+
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h2 class="modal-title">Save on Google Drive (3rd account)</h2>
+		</div>
+		<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+			<p>
+				This will save "<span class="file-title">My Favorite Restaurant</span>" to your <i class="icon-provider-gdriveter"></i>
+				<b>Google Drive</b>
+				account and keep it synchronized.
+			</p>
+			<div class="collapse form-horizontal sync-export-gdriveter-options-collapse">
+				<div class="form-group">
+					<label class="col-lg-3 control-label" for="input-sync-export-gdriveter-parentid">Folder ID
+						(optional)</label>
+					<div class="col-lg-8">
+                        <input type="text" id="input-sync-export-gdriveter-parentid" placeholder="FolderID" class="form-control">
+                        <div class="text-right">
+                            <a class="btn btn-link btn-sm action-export-gdriveter-choose-folder" title="Choose folder" data-dismiss="modal"><i class="icon-folder-open"></i> Open folder</a>
+                        </div>
+						<span class="help-block"> If no folder ID is supplied, the
+							file will be created in your root folder. </span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-lg-3 control-label" for="input-sync-export-gdriveter-fileid">Existing file ID
+						(optional)</label>
+					<div class="col-lg-8">
+						<input type="text" id="input-sync-export-gdriveter-fileid" placeholder="FileID" class="form-control"> <span class="help-block"> This will overwrite the existing file
+							on the server. </span>
+					</div>
+				</div>
+			</div>
+			<p class="align-right">
+				<a href="https://stackedit.io/editor#" data-toggle="collapse" data-target=".sync-export-gdriveter-options-collapse" class="collapsed">
+					Options <i class="icon-up-dir"></i>
+				</a>
+			</p>
+			<blockquote>
+				<p><b>Tip:</b> You can move or rename the file afterwards within Google
+						Drive.</p>
+			</blockquote>
+		</div>
+		<div class="modal-footer">
+			<a href="https://stackedit.io/editor#" class="btn btn-default pull-left action-autosync-dialog-gdriveter" data-dismiss="modal"><i class="icon-provider-gdrive"></i> Setup AutoSync</a>
+			<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+			<a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-sync-export-gdriveter">OK</a>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<div class="modal fade modal-autosync-gdrive"><div class="modal-dialog">
+	<div class="modal-content">
+
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h2 class="modal-title">AutoSync to Google Drive</h2>
+		</div>
+		<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+			<p>
+				<b>AutoSync</b> feature automatically saves all documents to your <i class="icon-provider-gdrive"></i>
+				<b>Google Drive</b>
+				account and keep them synchronized.
+			</p>
+			<div class="form-horizontal">
+    			<div class="form-group">
+    				<div class="col-lg-3 control-label"></div>
+    				<div class="col-lg-8">
+						<div class="radio">
+							<label> <input type="radio" name="radio-autosync-gdrive-mode" value="off">
+								Disabled
+							</label>
+						</div>
+						<div class="radio">
+							<label> <input type="radio" name="radio-autosync-gdrive-mode" value="new">
+								New documents (not current)
+							</label>
+						</div>
+						<div class="radio">
+							<label> <input type="radio" name="radio-autosync-gdrive-mode" value="all">
+								Every document not yet synchronized
+							</label>
+						</div>
+    				</div>
+    			</div>
+			    <br>
+    			<div class="form-group">
+    				<label class="col-lg-3 control-label" for="input-autosync-gdrive-parentid">Folder ID
+    					(optional)</label>
+    				<div class="col-lg-8">
+    					<div class="input-group">
+    						<input type="text" id="input-autosync-gdrive-parentid" placeholder="FolderID" class="form-control">
+    						<div class="input-group-btn">
+    							<a class="btn btn-link action-autosync-gdrive-choose-folder" title="Choose folder" data-dismiss="modal"><i class="icon-folder-open"></i></a>
+    						</div>
+    					</div>
+    					<span class="help-block"> If no folder ID is supplied,
+    						files will be created in your root folder. </span>
+    				</div>
+    			</div>
+    		</div>
+			<blockquote>
+				<p><b>Note:</b> Removing a local document will not delete the linked file on Google
+						Drive.</p>
+			</blockquote>
+		</div>
+		<div class="modal-footer">
+			<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+			<a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-autosync-gdrive">OK</a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="modal fade modal-autosync-gdrivesec"><div class="modal-dialog">
+	<div class="modal-content">
+
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h2 class="modal-title">AutoSync to Google Drive (2nd account)</h2>
+		</div>
+		<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+			<p>
+				<b>AutoSync</b> feature automatically saves all documents to your <i class="icon-provider-gdrivesec"></i>
+				<b>Google Drive</b>
+				account and keep them synchronized.
+			</p>
+			<div class="form-horizontal">
+    			<div class="form-group">
+    				<div class="col-lg-3 control-label"></div>
+    				<div class="col-lg-8">
+						<div class="radio">
+							<label> <input type="radio" name="radio-autosync-gdrivesec-mode" value="off">
+								Disabled
+							</label>
+						</div>
+						<div class="radio">
+							<label> <input type="radio" name="radio-autosync-gdrivesec-mode" value="new">
+								New documents (not current)
+							</label>
+						</div>
+						<div class="radio">
+							<label> <input type="radio" name="radio-autosync-gdrivesec-mode" value="all">
+								Every document not yet synchronized
+							</label>
+						</div>
+    				</div>
+    			</div>
+			    <br>
+    			<div class="form-group">
+    				<label class="col-lg-3 control-label" for="input-autosync-gdrivesec-parentid">Folder ID
+    					(optional)</label>
+    				<div class="col-lg-8">
+    					<div class="input-group">
+    						<input type="text" id="input-autosync-gdrivesec-parentid" placeholder="FolderID" class="form-control">
+    						<div class="input-group-btn">
+    							<a class="btn btn-link action-autosync-gdrivesec-choose-folder" title="Choose folder" data-dismiss="modal"><i class="icon-folder-open"></i></a>
+    						</div>
+    					</div>
+    					<span class="help-block"> If no folder ID is supplied,
+    						files will be created in your root folder. </span>
+    				</div>
+    			</div>
+    		</div>
+			<blockquote>
+				<p><b>Note:</b> Removing a local document will not delete the linked file on Google
+						Drive.</p>
+			</blockquote>
+		</div>
+		<div class="modal-footer">
+			<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+			<a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-autosync-gdrivesec">OK</a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="modal fade modal-autosync-gdriveter"><div class="modal-dialog">
+	<div class="modal-content">
+
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h2 class="modal-title">AutoSync to Google Drive (3rd account)</h2>
+		</div>
+		<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+			<p>
+				<b>AutoSync</b> feature automatically saves all documents to your <i class="icon-provider-gdriveter"></i>
+				<b>Google Drive</b>
+				account and keep them synchronized.
+			</p>
+			<div class="form-horizontal">
+    			<div class="form-group">
+    				<div class="col-lg-3 control-label"></div>
+    				<div class="col-lg-8">
+						<div class="radio">
+							<label> <input type="radio" name="radio-autosync-gdriveter-mode" value="off">
+								Disabled
+							</label>
+						</div>
+						<div class="radio">
+							<label> <input type="radio" name="radio-autosync-gdriveter-mode" value="new">
+								New documents (not current)
+							</label>
+						</div>
+						<div class="radio">
+							<label> <input type="radio" name="radio-autosync-gdriveter-mode" value="all">
+								Every document not yet synchronized
+							</label>
+						</div>
+    				</div>
+    			</div>
+			    <br>
+    			<div class="form-group">
+    				<label class="col-lg-3 control-label" for="input-autosync-gdriveter-parentid">Folder ID
+    					(optional)</label>
+    				<div class="col-lg-8">
+    					<div class="input-group">
+    						<input type="text" id="input-autosync-gdriveter-parentid" placeholder="FolderID" class="form-control">
+    						<div class="input-group-btn">
+    							<a class="btn btn-link action-autosync-gdriveter-choose-folder" title="Choose folder" data-dismiss="modal"><i class="icon-folder-open"></i></a>
+    						</div>
+    					</div>
+    					<span class="help-block"> If no folder ID is supplied,
+    						files will be created in your root folder. </span>
+    				</div>
+    			</div>
+    		</div>
+			<blockquote>
+				<p><b>Note:</b> Removing a local document will not delete the linked file on Google
+						Drive.</p>
+			</blockquote>
+		</div>
+		<div class="modal-footer">
+			<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+			<a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-autosync-gdriveter">OK</a>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<div class="modal fade modal-upload-dropbox">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Save on Dropbox</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>
+					This will save "<span class="file-title">My Favorite Restaurant</span>" to your <i class="icon-provider-dropbox"></i>
+					<code>Dropbox</code>
+					account and keep it synchronized.
+				</p>
+				<div class="form-horizontal">
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="input-sync-export-dropbox-path">File path</label>
+						<div class="col-sm-8">
+							<input type="text" id="input-sync-export-dropbox-path" placeholder="/path/to/My Document.md" class="form-control">
+							<span class="help-block"> File path is composed of both
+								folder and filename. </span>
+						</div>
+					</div>
+				</div>
+				<blockquote>
+					<b>Note:</b>
+					<ul>
+						<li>Dropbox file path does not depend on document title.</li>
+						<li>The title of your document will not be synchronized.</li>
+						<li>Destination folder must exist.</li>
+						<li>Any existing file at this location will be overwritten.</li>
+					</ul>
+				</blockquote>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+				<a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-sync-export-dropbox">OK</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-download-couchdb">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h2 class="modal-title">Open from CouchDB</h2>
+                <div class="form-horizontal list-mode">
+                    <br>
+                    <div class="form-group form-inline">
+                        <label for="input-sync-import-couchdb-tag" class="col-sm-3 control-label">Filter by tag</label>
+                        <select id="input-sync-import-couchdb-tag" class="col-sm-4 form-control"><option value="">none</option></select>
+                        <span class="col-sm-5">
+                            <a class="btn btn-link action-add-tag"><i class="icon-tag"></i> Add
+                            </a>
+                            <a class="btn btn-link action-remove-tag"><i class="icon-tag"></i> Remove
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            <a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+            <div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+                <p class="msg-default-couchdb alert alert-danger"><i class="icon-attention"></i> <b>Careful:</b>
+                    You're using the public CouchDB instance.
+                    <b>Anybody can open, edit and delete your files there!</b> To setup your own CouchDB instance <a target="blank" href="https://github.com/benweet/stackedit/blob/master/doc/couchdb-setup.md">click
+                        here</a>.
+                </p>
+
+                <div class="form-horizontal byid-mode">
+                    <div class="form-group">
+                        <label for="input-sync-import-couchdb-documentid" class="col-sm-3 control-label">Document
+                            ID</label>
+
+                        <div class="col-sm-9">
+                            <input id="input-sync-import-couchdb-documentid" class="form-control" placeholder="DocumentID">
+                            <span class="help-block">Multiple IDs can be provided (space separated)</span>
+                        </div>
+                    </div>
+                </div>
+                    <ul class="list-mode nav nav-pills">
+                        <li class="pull-right dropdown"><a href="https://stackedit.io/editor#" data-toggle="dropdown"><i class="icon-check"></i> Selection
+                            <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://stackedit.io/editor#" class="action-unselect-all"><i class="icon-check-empty"></i> Unselect all</a></li>
+                                <li class="divider"></li>
+                                <li class="disabled"><a href="https://stackedit.io/editor#" class="action-delete-items"><i class="icon-trash"></i> Delete</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="list-mode">
+                    </p>
+                    <div class="list-group document-list list-mode"></div>
+                <div class="list-mode text-center">
+                    <div class="please-wait"><b>Please wait...</b></div>
+                    <div class="no-document"><b>No document.</b></div>
+                    <button class="more-documents btn btn-link"><i class="icon-angle-double-down"></i> More documents!</button>
+                </div>
+                <p class="delete-mode hide">The following documents will be
+                    removed from CouchDB:</p>
+
+                <div class="delete-mode list-group selected-document-list hide"></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://stackedit.io/editor#" class="btn btn-default pull-left list-mode action-byid-mode">Open by ID...</a>
+                <a href="https://stackedit.io/editor#" class="btn btn-default delete-mode action-cancel hide">Cancel</a>
+                <a href="https://stackedit.io/editor#" class="btn btn-primary delete-mode action-delete-items-confirm hide">Delete</a>
+                <a href="https://stackedit.io/editor#" class="btn btn-default byid-mode action-cancel">Cancel</a>
+                <a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-sync-import-couchdb byid-mode">Open</a>
+                <a href="https://stackedit.io/editor#" class="btn btn-default list-mode" data-dismiss="modal">Cancel</a>
+                <a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-sync-import-couchdb list-mode">Open</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade modal-upload-couchdb">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h2 class="modal-title">Save on CouchDB</h2>
+            <a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+            <div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+                <p class="msg-default-couchdb alert alert-danger"><i class="icon-attention"></i> <b>Careful:</b>
+                    You're using the public CouchDB instance.
+                    <b>Anybody can open, edit and delete your files there!</b> To setup your own CouchDB instance <a target="blank" href="https://github.com/benweet/stackedit/blob/master/doc/couchdb-setup.md">click
+                        here</a>.
+                </p>
+
+                <p>
+                    This will save "<span class="file-title">My Favorite Restaurant</span>" to CouchDB and keep it synchronized.
+                </p>
+                <blockquote>
+                    <p><b>Tip:</b> You can use a
+                    <a href="http://jekyllrb.com/docs/frontmatter/" target="_blank">YAML front matter</a> to specify tags for your document.</p>
+                    <p>Alternatively, you can place comma separated tags in square brackets at the beginning of the document title.</p>
+                </blockquote>
+            </div>
+            <div class="modal-footer">
+                <a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+                <a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-sync-export-couchdb">OK</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade modal-manage-sync">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Synchronization</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>
+					"<span class="file-title">My Favorite Restaurant</span>" is synchronized with the
+					following location(s):
+				</p>
+				<div class="sync-list"></div>
+				<blockquote>
+					<p><b>Note:</b> Removing a synchronized location will not delete any
+					file.</p>
+				</blockquote>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-primary" data-dismiss="modal">Close</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-publish">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">
+					Publish on <span class="publish-provider-name"></span>
+				</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<div class="form-horizontal">
+					<div class="form-group modal-publish-ssh">
+						<label class="col-sm-4 control-label" for="input-publish-ssh-host">Host</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-ssh-host" placeholder="hostname.or.ip" class="form-control"> <span class="help-block"> Host must be accessible publicly,
+								unless you're hosting your own StackEdit instance.
+							</span>
+						</div>
+					</div>
+					<div class="form-group modal-publish-ssh">
+						<label class="col-sm-4 control-label" for="input-publish-ssh-port">Port
+							(optional)</label>
+						<div class="col-sm-2">
+							<input type="text" id="input-publish-ssh-port" placeholder="22" class="form-control">
+						</div>
+					</div>
+					<div class="form-group modal-publish-ssh">
+						<label class="col-sm-4 control-label" for="input-publish-ssh-username">Username</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-ssh-username" placeholder="username" class="form-control" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAmJJREFUWAntV7uKIkEUvbYGM4KID3wEIgjKRLLpKGLgFwiCfslGhkb7IbLgAzE1GhMxWxRRBEEwmEgDERWfW6fXuttq60a2wU6B1qlzb9U5fatsKROJVigUArvd7oeAyePx6Af3qGYymT7F2h8Wi+V7Pp+fmE7iv4Sw81GieusKIzNh4puCJzdaHIagCW1F4KSeQ4O4pPLoPb/3INBGBZ7avgz8fxWIxWIUCoX43Blegbe3NwoGg88zwMoncFUB8Yokj8dDdrv9MpfHVquV/H4/iVcpc1qgKAp5vV6y2WxaWhefreB0OimXy6kGkD0YDKhSqdB2u+XJqVSK4vE4QWS5XKrx0WjEcZ/PR9lslhwOh8p1Oh2q1Wp0OBw4RwvOKpBOp1kcSdivZPLvmxrjRCKhiiOOSmQyGXp5ecFQbRhLcRDRaJTe39//BHW+2cDr6ysFAoGrlEgkwpwWS1I7z+VykdvtliHuw+Ew40vABvb7Pf6hLuMk/rGY02ImBZC8dqv04lpOYjaw2WzUPZcB2WMPZet2u1cmZ7MZTSYTNWU+n9N4PJbp3GvXYPIE2ADG9Xqder2e+kTr9ZqazSa1222eA6FqtUoQwqHCuFgscgWQWC6XaTgcEiqKQ9poNOiegbNfwWq1olKppB6yW6cWVcDHbDarIuzuBBaLhWrqVvwy/6wCMnhLXMbR4wnvtX/F5VxdAzJoRH+2BUYItlotmk6nLGW4gX6/z+IAT9+CLwPPr8DprnZ2MIwaQBsV+DBKUEfnQ8EtFRdFneBDKWhCW8EVGbdUQfxESR6qKhaHBrSgCe3fbLTpPlS70M0AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+						</div>
+					</div>
+					<div class="form-group modal-publish-ssh">
+						<label class="col-sm-4 control-label" for="input-publish-ssh-password">Password</label>
+						<div class="col-sm-7">
+							<input type="password" id="input-publish-ssh-password" placeholder="password" class="form-control" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAmJJREFUWAntV7uKIkEUvbYGM4KID3wEIgjKRLLpKGLgFwiCfslGhkb7IbLgAzE1GhMxWxRRBEEwmEgDERWfW6fXuttq60a2wU6B1qlzb9U5fatsKROJVigUArvd7oeAyePx6Af3qGYymT7F2h8Wi+V7Pp+fmE7iv4Sw81GieusKIzNh4puCJzdaHIagCW1F4KSeQ4O4pPLoPb/3INBGBZ7avgz8fxWIxWIUCoX43Blegbe3NwoGg88zwMoncFUB8Yokj8dDdrv9MpfHVquV/H4/iVcpc1qgKAp5vV6y2WxaWhefreB0OimXy6kGkD0YDKhSqdB2u+XJqVSK4vE4QWS5XKrx0WjEcZ/PR9lslhwOh8p1Oh2q1Wp0OBw4RwvOKpBOp1kcSdivZPLvmxrjRCKhiiOOSmQyGXp5ecFQbRhLcRDRaJTe39//BHW+2cDr6ysFAoGrlEgkwpwWS1I7z+VykdvtliHuw+Ew40vABvb7Pf6hLuMk/rGY02ImBZC8dqv04lpOYjaw2WzUPZcB2WMPZet2u1cmZ7MZTSYTNWU+n9N4PJbp3GvXYPIE2ADG9Xqder2e+kTr9ZqazSa1222eA6FqtUoQwqHCuFgscgWQWC6XaTgcEiqKQ9poNOiegbNfwWq1olKppB6yW6cWVcDHbDarIuzuBBaLhWrqVvwy/6wCMnhLXMbR4wnvtX/F5VxdAzJoRH+2BUYItlotmk6nLGW4gX6/z+IAT9+CLwPPr8DprnZ2MIwaQBsV+DBKUEfnQ8EtFRdFneBDKWhCW8EVGbdUQfxESR6qKhaHBrSgCe3fbLTpPlS70M0AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+						</div>
+					</div>
+					<div class="form-group modal-publish-github">
+						<label class="col-sm-4 control-label" for="input-publish-github-repo">Repository</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-github-repo" placeholder="Repository name or URL" class="form-control">
+						</div>
+					</div>
+					<div class="form-group modal-publish-github">
+						<label class="col-sm-4 control-label" for="input-publish-github-branch">Branch</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-github-branch" placeholder="branch-name" class="form-control">
+						</div>
+					</div>
+					<div class="form-group modal-publish-ssh modal-publish-github">
+						<label class="col-sm-4 control-label" for="input-publish-file-path">File path</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-file-path" placeholder="path/to/file.md" class="form-control">
+							<span class="help-block"> File path is composed of both
+								folder and filename. </span>
+						</div>
+					</div>
+					<div class="form-group modal-publish-gist">
+						<label class="col-sm-4 control-label" for="input-publish-filename">Filename</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-filename" placeholder="filename" class="form-control">
+						</div>
+					</div>
+					<div class="form-group modal-publish-gist">
+						<label class="col-sm-4 control-label" for="input-publish-gist-id">Existing
+							ID (optional)</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-gist-id" placeholder="GistID" class="form-control">
+						</div>
+					</div>
+					<div class="form-group modal-publish-gist">
+						<label class="col-sm-4 control-label" for="input-publish-gist-public">Public</label>
+						<div class="col-sm-7">
+							<div class="checkbox">
+								<input type="checkbox" id="input-publish-gist-public" checked="checked">
+							</div>
+						</div>
+					</div>
+					<div class="form-group modal-publish-blogger modal-publish-bloggerpage">
+						<label class="col-sm-4 control-label" for="input-publish-blogger-url">Blog URL</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-blogger-url" placeholder="http://exemple.blogger.com/" class="form-control">
+						</div>
+					</div>
+					<div class="form-group modal-publish-tumblr">
+						<label class="col-sm-4 control-label" for="input-publish-tumblr-hostname">Blog hostname</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-tumblr-hostname" placeholder="exemple.tumblr.com" class="form-control">
+						</div>
+					</div>
+					<div class="form-group modal-publish-wordpress">
+						<label class="col-sm-4 control-label" for="input-publish-tumblr-hostname">WordPress site</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-wordpress-site" placeholder="exemple.wordpress.com" class="form-control">
+							<span class="help-block"> <a target="_blank" href="http://jetpack.me/">Jetpack plugin</a> is required for
+								self-hosted sites.
+							</span>
+						</div>
+					</div>
+					<div class="form-group modal-publish-blogger modal-publish-tumblr modal-publish-wordpress">
+						<label class="col-sm-4 control-label" for="input-publish-postid">Update
+							existing post ID (optional)</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-postid" placeholder="PostID" class="form-control">
+						</div>
+					</div>
+					<div class="form-group modal-publish-bloggerpage">
+						<label class="col-sm-4 control-label" for="input-publish-pageid">Update
+							existing page ID (optional)</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-pageid" placeholder="PageID" class="form-control">
+						</div>
+					</div>
+					<div class="form-group modal-publish-dropbox">
+						<label class="col-sm-4 control-label" for="input-publish-dropbox-path">File path</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-dropbox-path" placeholder="/path/to/My Document.html" class="form-control">
+							<span class="help-block"> File path is composed of both
+								folder and filename. </span>
+						</div>
+					</div>
+					<div class="form-group modal-publish-gdrive">
+						<label class="col-sm-4 control-label" for="input-publish-gdrive-fileid">File ID (optional)</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-gdrive-fileid" placeholder="FileID" class="form-control"> <span class="help-block">If no file ID is supplied, a new file
+								will be created in your Google Drive root folder. You can move
+								the file afterwards within Google Drive.</span>
+						</div>
+					</div>
+					<div class="form-group modal-publish-gdrive">
+						<label class="col-sm-4 control-label" for="input-publish-gdrive-filename">Force filename
+							(optional)</label>
+						<div class="col-sm-7">
+							<input type="text" id="input-publish-gdrive-filename" placeholder="Filename" class="form-control"> <span class="help-block">If no file name is supplied, the
+								document title will be used.</span>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Format</label>
+						<div class="col-sm-7">
+							<div class="radio">
+								<label> <input type="radio" name="radio-publish-format" value="markdown"> Markdown
+								</label>
+							</div>
+							<div class="radio">
+								<label> <input type="radio" name="radio-publish-format" value="html"> HTML
+								</label>
+							</div>
+							<div class="radio">
+								<label> <input type="radio" name="radio-publish-format" value="template"> Template
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="collapse publish-custom-template-collapse">
+						<div class="form-group">
+							<div class="col-sm-4"></div>
+							<div class="col-sm-7">
+								<div class="checkbox">
+									<label> <input type="checkbox" id="checkbox-publish-custom-template"> Custom template
+									</label> <a href="https://stackedit.io/editor#" class="tooltip-template" data-original-title="" title="">(?)</a>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-4"></div>
+							<div class="col-sm-7">
+								<textarea class="form-control" id="textarea-publish-custom-template"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<blockquote class="front-matter-info modal-publish-blogger modal-publish-tumblr modal-publish-wordpress">
+                    <p><b>Tip:</b> You can use a
+                    <a href="http://jekyllrb.com/docs/frontmatter/" target="_blank">YAML front matter</a> to specify the title and the tags/labels of your publication.</p>
+                    <p><b>Interpreted variables:</b> <code>title</code>, <code>tags</code>, <code>published</code>, <code>date</code>.</p>
+				</blockquote>
+				<blockquote class="front-matter-info modal-publish-bloggerpage">
+                    <p><b>Tip:</b> You can use a
+                    <a href="http://jekyllrb.com/docs/frontmatter/" target="_blank">YAML front matter</a> to specify the title of your page.</p>
+                    <p><b>Interpreted variables:</b> <code>title</code>.</p>
+				</blockquote>
+				<blockquote class="url-info modal-publish-bloggerpage">
+                    <p><b>About URL:</b> For newly created page , Blogger API will append a generated number to the url like <code>about-me-1234.html</code>, if you deeply care about your URL naming, you should first create the page on Blogger and then update them with StackEdit specifying the pageId when publishing.
+                    </p>
+                    <p><b>About page visibility:</b> Blogger API does not respect published status for pages.When publishing the page to Blogger, the page will be <strong>live</strong> but not added to the page listing. You should arrange the page listing from Blogger dashboard.
+                    </p>
+				</blockquote>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+				<a href="https://stackedit.io/editor#" data-dismiss="modal" class="btn btn-primary action-process-publish">OK</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-manage-publish">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Publication</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>
+					"<span class="file-title">My Favorite Restaurant</span>" is published on the following
+					location(s):
+				</p>
+				<div class="publish-list"></div>
+				<blockquote>
+					<p><b>Note:</b> Removing a publish location will not delete the actual publication.</p>
+				</blockquote>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-primary" data-dismiss="modal">Close</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-manage-sharing">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Sharing</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+                <p>Collaborate on "<span class="file-title">My Favorite Restaurant</span>" using the following link(s):</p>
+            	<p class="msg-no-share-editor"><b>No sharing link yet!</b>
+            	</p>
+                <div class="share-editor-list"></div>
+            	<blockquote>
+                    <p><b>Note:</b> To collaborate on this document, just <a href="https://stackedit.io/editor#" class="action-sync-export-dialog-couchdb" data-dismiss="modal">save it on CouchDB</a>.
+                    To collaborate via Google Drive or Dropbox, you have to share the file manually from Google Drive/Dropbox websites.</p>
+            	</blockquote>
+                <hr>
+                <p>Share a read-only version of "<span class="file-title">My Favorite Restaurant</span>" using the following link(s):</p>
+            	<p class="msg-no-share-viewer"><b>No sharing link yet!</b>
+            	</p>
+                <div class="share-viewer-list"></div>
+            	<blockquote>
+                    <p><b>Note:</b> To share a read-only version of this document, just <a href="https://stackedit.io/editor#" class="action-publish-gist" data-dismiss="modal">publish it as a Gist</a> in
+                    Markdown format.</p>
+            	</blockquote>
+            	<blockquote>
+            		<p><b>Tip:</b> You can open any markdown URL within StackEdit Viewer using <a href="https://stackedit.io/viewer#!url=https://raw.github.com/benweet/stackedit/master/README.md" title="Sharing example"><code>viewer#!url=</code></a>.</p>
+            	</blockquote>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-primary" data-dismiss="modal">Close</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-settings">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h2 class="modal-title">Settings</h2>
+				<ul class="nav nav-tabs">
+					<li class="active"><a class="action-load-settings" href="https://stackedit.io/editor#tabpane-settings-basic" data-toggle="tab">Basic</a></li>
+					<li><a class="action-load-settings" href="https://stackedit.io/editor#tabpane-settings-advanced" data-toggle="tab">Advanced</a></li>
+					<li><a class="action-load-settings" href="https://stackedit.io/editor#tabpane-settings-extensions" data-toggle="tab">Extensions</a></li>
+					<li><a class="action-load-settings" href="https://stackedit.io/editor#tabpane-settings-utils" data-toggle="tab">Utils</a></li>
+				</ul>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+
+				<div class="tab-content clearfix">
+					<div class="tab-pane active" id="tabpane-settings-basic">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">Layout orientation</label>
+								<div class="col-sm-7">
+									<div class="radio">
+										<label> <input type="radio" name="radio-layout-orientation" value="horizontal">
+											Horizontal
+										</label>
+									</div>
+									<div class="radio">
+										<label> <input type="radio" name="radio-layout-orientation" value="vertical">
+											Vertical
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="input-settings-theme">Theme</label>
+								<div class="col-sm-7">
+									<select id="input-settings-theme" class="form-control"><option value="blue">Blue</option><option value="default">Default</option><option value="gray">Gray</option><option value="night">Night</option><option value="school">School</option><option value="solarized-light">Solarized Light</option><option value="solarized-dark">Solarized Dark</option></select>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-4"></div>
+								<div class="col-sm-7">
+									<div class="checkbox">
+									    <label>
+										    <input type="checkbox" id="input-settings-markdown-extra">
+										    <b>Markdown Extra/GitHub Flavored Markdown</b> syntax
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-4"></div>
+								<div class="col-sm-7">
+									<div class="checkbox">
+									    <label>
+										    <input type="checkbox" id="input-settings-mathjax">
+										    <b>LaTeX mathematical expressions</b> using <code>$</code> and <code>$$</code> delimiters
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="input-settings-gdrive-multiaccount">Google Drive multi-accounts
+								</label>
+								<div class="col-sm-7">
+									<select id="input-settings-gdrive-multiaccount" class="form-control">
+    									<option value="1">1 account</option>
+    									<option value="2">2 accounts</option>
+    									<option value="3">3 accounts</option>
+									</select>
+									<span class="help-block"><b>Please sign in first with Google.</b> Once linked with your Google accounts, changing account is not possible unless you reset the application.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tabpane-settings-advanced">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-4 control-label">Edit mode</label>
+								<div class="col-sm-7">
+									<div class="radio">
+										<label> <input type="radio" name="radio-settings-edit-mode" value="ltr">
+											Left-To-Right
+										</label>
+									</div>
+									<div class="radio">
+										<label> <input type="radio" name="radio-settings-edit-mode" value="rtl">
+											Right-To-Left
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">Editor's font style</label>
+								<div class="col-sm-7">
+									<div class="radio">
+										<label> <input type="radio" name="radio-settings-editor-font-class" value="font-rich">
+											Rich
+										</label>
+									</div>
+									<div class="radio">
+										<label> <input type="radio" name="radio-settings-editor-font-class" value="font-rich-monospaced">
+											Rich Monospaced
+										</label>
+									</div>
+									<div class="radio">
+										<label> <input type="radio" name="radio-settings-editor-font-class" value="font-monospaced">
+											Monospaced
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="input-settings-font-size">Font size ratio</label>
+								<div class="col-sm-8 form-inline">
+									<input type="text" id="input-settings-font-size" class="form-control col-sm-2">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="input-settings-max-width">Max width ratio</label>
+								<div class="col-sm-8 form-inline">
+									<input type="text" id="input-settings-max-width" class="form-control col-sm-2">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="input-settings-cursor-focus">Cursor focus ratio</label>
+								<div class="col-sm-8 form-inline">
+									<input type="text" id="input-settings-cursor-focus" class="form-control col-sm-2">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="input-settings-lazy-rendering">Lazy rendering <a href="https://stackedit.io/editor#" class="tooltip-lazy-rendering" data-original-title="" title="">(?)</a>
+								</label>
+								<div class="col-sm-7">
+									<div class="checkbox">
+										<input type="checkbox" id="input-settings-lazy-rendering">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="textarea-settings-default-content">Default content
+									<a href="https://stackedit.io/editor#" class="tooltip-default-content" data-original-title="" title="">(?)</a>
+								</label>
+								<div class="col-sm-7">
+									<textarea id="textarea-settings-default-content" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="textarea-settings-publish-template">Default
+									template <a href="https://stackedit.io/editor#" class="tooltip-template" data-original-title="" title="">(?)</a>
+								</label>
+								<div class="col-sm-7">
+									<textarea id="textarea-settings-publish-template" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="textarea-settings-pdf-template">PDF
+									template <a href="https://stackedit.io/editor#" class="tooltip-template" data-original-title="" title="">(?)</a>
+								</label>
+								<div class="col-sm-7">
+									<textarea id="textarea-settings-pdf-template" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="textarea-settings-pdf-options">PDF options
+                                    <a href="https://stackedit.io/editor#" class="tooltip-pdf-options" data-original-title="" title="">(?)</a>
+                                </label>
+								<div class="col-sm-7">
+                                    <textarea id="textarea-settings-pdf-options" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="input-settings-markdown-mime-type">Markdown MIME type
+								</label>
+								<div class="col-sm-7">
+									<select id="input-settings-markdown-mime-type" class="form-control">
+										<option value="text/plain">text/plain</option>
+										<option value="text/x-markdown">text/x-markdown</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">Permissions</label>
+								<div class="col-sm-7">
+									<div class="checkbox">
+									    <label>
+										    <input type="checkbox" id="input-settings-gdrive-full-access">
+										    Allow StackEdit to open any document in Google Drive
+										</label> <span class="help-block">Existing authorization has to be revoked in
+										<a href="https://www.google.com/settings/dashboard" target="_blank">Google Dashboard</a>
+										for this change to take effect.</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-4"></div>
+								<div class="col-sm-7">
+									<div class="checkbox">
+									    <label>
+										    <input type="checkbox" id="input-settings-dropbox-full-access">
+										    Allow StackEdit to open any document in Dropbox
+										</label> <span class="help-block">If unchecked, access will be restricted to folder
+										<b>/Applications/StackEdit</b> for existing files.</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-4"></div>
+								<div class="col-sm-7">
+									<div class="checkbox">
+									    <label>
+										    <input type="checkbox" id="input-settings-github-full-access">
+										    Allow StackEdit to access private repositories in GitHub
+										</label> <span class="help-block">Existing authorization has to be revoked in
+										<a href="https://github.com/settings/applications" target="_blank">GitHub settings</a>
+										for this change to take effect.</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="input-settings-publish-commit-msg">GitHub commit message</label>
+								<div class="col-sm-7">
+									<input type="text" id="input-settings-publish-commit-msg" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="input-settings-couchdb-url">CouchDB URL</label>
+								<div class="col-sm-7">
+									<input type="text" id="input-settings-couchdb-url" class="form-control">
+                                    <span class="help-block pull-right"><a target="blank" href="https://github.com/benweet/stackedit/blob/master/doc/couchdb-setup.md">Setup
+                                        your own CouchDB...</a></span>
+                                </div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tabpane-settings-extensions">
+						<div class="panel-group accordion-extensions"><div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-buttonHtmlCode" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-buttonHtmlCode">
+			Button "HTML code" <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-buttonHtmlCode" class="collapse">
+		<div class="accordion-inner clearfix"><p>Adds a "HTML code" button over the preview.</p>
+<div class="form-horizontal">
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="textarea-html-code-template">Template
+			<a href="https://stackedit.io/editor#" class="tooltip-template" data-original-title="" title="">(?)</a>
+		</label>
+		<div class="col-sm-7">
+			<textarea id="textarea-html-code-template" class="form-control"></textarea>
+		</div>
+	</div>
+</div></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-buttonMarkdownSyntax" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-buttonMarkdownSyntax">
+			Button "Markdown syntax <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-buttonMarkdownSyntax" class="collapse">
+		<div class="accordion-inner clearfix"><p>Adds a "Markdown syntax" button over the preview.</p></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-buttonStat" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-buttonStat">
+			Button "Statistics" <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-buttonStat" class="collapse">
+		<div class="accordion-inner clearfix"><p>Adds a "Document statistics" button over the preview.</p>
+<div class="form-horizontal">
+	<div class="form-group form-inline">
+		<label class="label-text" for="input-stat-name1">Title</label> <input id="input-stat-name1" type="text" class="form-control col-sm-3"> <label class="label-text" for="input-stat-value1">RegExp</label> <input id="input-stat-value1" type="text" class="form-control col-sm-4">
+	</div>
+	<div class="form-group form-inline">
+		<label class="label-text" for="input-stat-name2">Title</label> <input id="input-stat-name2" type="text" class="form-control col-sm-3"> <label class="label-text" for="input-stat-value2">RegExp</label> <input id="input-stat-value2" type="text" class="form-control col-sm-4">
+	</div>
+	<div class="form-group form-inline">
+		<label class="label-text" for="input-stat-name3">Title</label> <input id="input-stat-name3" type="text" class="form-control col-sm-3"> <label class="label-text" for="input-stat-value3">RegExp</label> <input id="input-stat-value3" type="text" class="form-control col-sm-4">
+	</div>
+</div>
+</div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-buttonSync" type="checkbox" disabled="">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-buttonSync">
+			Button "Synchronize" <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-buttonSync" class="collapse">
+		<div class="accordion-inner clearfix"><p>Adds a "Synchronize documents" button in the navigation bar.</p>
+<div class="form-horizontal">
+	<div class="form-group">
+		<label class="col-sm-5 control-label" for="input-sync-period">Sync
+			period (0: manual)</label>
+		<div class="col-sm-6 form-inline">
+			<input type="text" id="input-sync-period" class="col-sm-5 form-control" placeholder="180000"> ms
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-5 control-label" for="input-sync-shortcut">Sync
+			shortcut <a href="http://craig.is/killing/mice#keys" target="_blank">(?)</a></label>
+		<div class="col-sm-6">
+			<input type="text" id="input-sync-shortcut" class="form-control">
+		</div>
+	</div>
+</div></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-buttonViewer" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-buttonViewer">
+			Button "Viewer" <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-buttonViewer" class="collapse">
+		<div class="accordion-inner clearfix"><p>Adds a "Viewer" button over the preview.</p></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-documentSelector" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-documentSelector">
+			Document Selector <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-documentSelector" class="collapse">
+		<div class="accordion-inner clearfix"><p>Allows toggling document with keyboard shortcuts.</p>
+<div class="form-horizontal">
+	<div class="form-group">
+		<label class="col-sm-5 control-label" for="select-document-selector-orderby">Order
+			by</label>
+		<div class="col-sm-6">
+			<select id="select-document-selector-orderby" class="form-control">
+				<option value="title">Document title</option>
+				<option value="mru">Most recently used</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-5 control-label" for="input-document-selector-shortcut-previous">"Previous"
+			shortcut <a href="http://craig.is/killing/mice#keys" target="_blank">(?)</a></label>
+		<div class="col-sm-6">
+			<input type="text" id="input-document-selector-shortcut-previous" class="form-control">
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-5 control-label" for="input-document-selector-shortcut-next">"Next"
+			shortcut <a href="http://craig.is/killing/mice#keys" target="_blank">(?)</a></label>
+		<div class="col-sm-6">
+			<input type="text" id="input-document-selector-shortcut-next" class="form-control">
+		</div>
+	</div>
+</div></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-findReplace" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-findReplace">
+			Find and Replace <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-findReplace" class="collapse">
+		<div class="accordion-inner clearfix"><p>Helps find and replace text in the current document.</p>
+<div class="form-horizontal">
+	<div class="form-group">
+		<label class="col-sm-5 control-label" for="input-find-replace-shortcut">Shortcut <a href="http://craig.is/killing/mice#keys" target="_blank">(?)</a></label>
+		<div class="col-sm-6">
+			<input type="text" id="input-find-replace-shortcut" class="form-control">
+		</div>
+	</div>
+</div></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-googleAnalytics" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-googleAnalytics">
+			Google Analytics <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-googleAnalytics" class="collapse">
+		<div class="accordion-inner clearfix"><p>Sends anonymous statistics about usage and errors to help improve StackEdit.</p></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-htmlSanitizer" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-htmlSanitizer">
+			HTML Sanitizer <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-htmlSanitizer" class="collapse">
+		<div class="accordion-inner clearfix"><p>Prevents cross-site-scripting attacks (XSS).</p>
+<p class="alert alert-danger"><i class="icon-attention"></i> <b>Careful:</b> Disable at your own risk!</p>
+</div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-emailConverter" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-emailConverter">
+			Markdown Email <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-emailConverter" class="collapse">
+		<div class="accordion-inner clearfix"><p>Converts email addresses in the form &lt;email@example.com&gt; into clickable links.</p></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-markdownExtra" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-markdownExtra">
+			Markdown Extra <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-markdownExtra" class="collapse">
+		<div class="accordion-inner clearfix"><p>Adds extra features to the original Markdown syntax.</p>
+<div class="form-horizontal">
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-markdownextra-tables">Tables</label>
+		<div class="col-sm-7">
+			<div class="checkbox">
+				<input type="checkbox" id="input-markdownextra-tables">
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-markdownextra-deflist">Definition lists</label>
+		<div class="col-sm-7">
+			<div class="checkbox">
+				<input type="checkbox" id="input-markdownextra-deflist">
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-markdownextra-attrlist">Special attributes</label>
+		<div class="col-sm-7">
+			<div class="checkbox">
+				<input type="checkbox" id="input-markdownextra-attrlist">
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-markdownextra-footnotes">Footnotes</label>
+		<div class="col-sm-7">
+			<div class="checkbox">
+				<input type="checkbox" id="input-markdownextra-footnotes">
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-markdownextra-comments">Comments</label>
+		<div class="col-sm-7">
+			<div class="checkbox">
+				<input type="checkbox" id="input-markdownextra-comments">
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-markdownextra-smartypants">SmartyPants</label>
+		<div class="col-sm-7">
+			<div class="checkbox">
+				<input type="checkbox" id="input-markdownextra-smartypants">
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-markdownextra-newlines">GFM newlines</label>
+		<div class="col-sm-7">
+			<div class="checkbox">
+				<input type="checkbox" id="input-markdownextra-newlines">
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-markdownextra-intraword">GFM intra-word stars/underscores</label>
+		<div class="col-sm-7">
+			<div class="checkbox">
+				<input type="checkbox" id="input-markdownextra-intraword">
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-markdownextra-strikethrough">GFM strikethrough</label>
+		<div class="col-sm-7">
+			<div class="checkbox">
+				<input type="checkbox" id="input-markdownextra-strikethrough">
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-markdownextra-fencedcodegfm">GFM fenced code
+			blocks</label>
+		<div class="col-sm-7">
+			<div class="checkbox">
+				<input type="checkbox" id="input-markdownextra-fencedcodegfm">
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-markdownextra-highlighter">Syntax highlighter</label>
+		<div class="col-sm-7">
+			<select id="input-markdownextra-highlighter" class="form-control"><option>None</option>
+				<option value="prettify">Prettify</option>
+				<option value="highlight">Highlight.js</option>
+			</select>
+		</div>
+	</div>
+</div>
+<span class="help-block pull-right"><a target="_blank" href="https://github.com/jmcmanus/pagedown-extra">More info</a></span></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-mathJax" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-mathJax">
+			MathJax <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-mathJax" class="collapse">
+		<div class="accordion-inner clearfix"><p>Allows StackEdit to interpret LaTeX mathematical expressions.</p>
+<div class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-4 control-label" for="input-mathjax-config-tex">TeX configuration</label>
+        <div class="col-sm-7">
+            <input type="text" id="input-mathjax-config-tex" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label" for="input-mathjax-config-tex2jax">tex2jax configuration</label>
+        <div class="col-sm-7">
+            <input type="text" id="input-mathjax-config-tex2jax" class="form-control">
+        </div>
+    </div>
+</div>
+<span class="help-block pull-right"><a target="_blank" href="http://docs.mathjax.org/en/latest/options/index.html">More info</a></span></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-notifications" type="checkbox" disabled="">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-notifications">
+			Notifications <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-notifications" class="collapse">
+		<div class="accordion-inner clearfix"><p>Shows notification messages in the bottom-right corner of the
+	screen.</p>
+<div class="form-horizontal">
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-notifications-timeout">Timeout</label>
+		<div class="col-sm-7 form-inline">
+			<input type="text" id="input-notifications-timeout" class="col-sm-5 form-control"> <span class="help-inline">ms</span>
+		</div>
+	</div>
+</div></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-partialRendering" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-partialRendering">
+			Partial Rendering <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-partialRendering" class="collapse">
+		<div class="accordion-inner clearfix"><p>Renders modified sections only.</p>
+<blockquote>
+	<p><b>Note:</b> Document sections are based on title elements (h1, h2...). Therefore if
+	your document does not contain any title, performance will not be increased.</p>
+</blockquote></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-scrollSync" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-scrollSync">
+			Scroll Sync <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-scrollSync" class="collapse">
+		<div class="accordion-inner clearfix"><p>Binds together editor and preview scrollbars.</p>
+<blockquote>
+	<p><b>Note:</b> The mapping between Markdown and HTML is based on the
+	position of the title elements (h1, h2...) in the page. Therefore if
+	your document does not contain any title, the mapping will be linear and
+	consequently less accurate.</p>
+</blockquote></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-shortcuts" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-shortcuts">
+			Shortcuts <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-shortcuts" class="collapse">
+		<div class="accordion-inner clearfix"><p>Maps keyboard shortcuts to JavaScript functions.</p>
+<div class="form-horizontal">
+	<div class="form-group">
+		<label class="col-sm-3 control-label" for="textarea-shortcuts-mapping">Mapping
+			<a href="https://stackedit.io/editor#" class="tooltip-shortcuts-extension" data-original-title="" title="">(?)</a>
+		</label>
+		<div class="col-sm-8">
+			<textarea id="textarea-shortcuts-mapping" class="form-control"></textarea>
+		</div>
+	</div>
+</div>
+</div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-toc" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-toc">
+			Table of Contents <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-toc" class="collapse">
+		<div class="accordion-inner clearfix"><p>Generates a table of contents when a [TOC] marker is found.</p>
+<div class="form-horizontal">
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-toc-marker">Marker
+			RegExp</label>
+		<div class="col-sm-7">
+		
+			<input type="text" id="input-toc-marker" class="col-sm-4 form-control">
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="input-toc-maxdepth">Max depth</label>
+		<div class="col-sm-7 form-inline">
+			<input type="text" id="input-toc-maxdepth" class="col-sm-5 form-control" placeholder="6">
+		</div>
+	</div>
+	<div class="form-group">
+        <label class="col-sm-4 control-label" for="input-toc-button">Button over preview</label>
+        <div class="col-sm-7">
+        <div class="checkbox">
+            <input type="checkbox" id="input-toc-button">
+            </div>
+        </div>
+    </div>
+	
+</div></div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-umlDiagrams" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-umlDiagrams">
+			UML Diagrams <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-umlDiagrams" class="collapse">
+		<div class="accordion-inner clearfix"><p>Creates UML diagrams from plain text description.</p>
+
+<div class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-4 control-label" for="textarea-umldiagram-flowchart-options">Flow charts options (JSON)
+        </label>
+        <div class="col-sm-7">
+            <textarea id="textarea-umldiagram-flowchart-options" class="form-control"></textarea>
+        </div>
+    </div>
+</div>
+<br>
+<p>Sequence diagrams:</p>
+<pre><div class="help-block pull-right"><a target="_blank" href="http://bramp.github.io/js-sequence-diagrams/">More info</a></div><code>```sequence
+Alice-&gt;Bob: Hello Bob, how are you?
+Bob--&gt;Alice: I am good thanks!
+```</code>
+</pre>
+
+<p>Flow charts:</p>
+<pre><div class="help-block pull-right"><a target="_blank" href="http://adrai.github.io/flowchart.js/">More info</a></div><code>```flow
+st=&gt;start: Start
+e=&gt;end
+op=&gt;operation: My Operation
+cond=&gt;condition: Yes or No?
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+```</code>
+</pre>
+<blockquote>
+    <p><b>Note:</b> Markdown Extra extension has to be enabled with GFM fenced code blocks option.</p>
+</blockquote>
+</div>
+	</div>
+</div>
+<div class="panel">
+	<div class="accordion-heading">
+		<div class="checkbox pull-right">
+			<label> <input id="input-enable-extension-userCustom" type="checkbox">
+				enabled
+			</label>
+		</div>
+		<a data-toggle="collapse" data-parent=".accordion-extensions" class="accordion-toggle collapsed" href="https://stackedit.io/editor#accordion-extensions-collapse-userCustom">
+			UserCustom extension <i class="icon-up-dir"></i></a>
+	</div>
+	<div id="accordion-extensions-collapse-userCustom" class="collapse">
+		<div class="accordion-inner clearfix"><p>Allows users to implement their own extension.</p>
+<div class="form-horizontal">
+	<div class="form-group">
+		<label class="col-sm-4 control-label" for="textarea-usercustom-code">JavaScript code
+			<a href="https://stackedit.io/editor#" class="tooltip-usercustom-extension" data-original-title="" title="">(?)</a>
+		</label>
+		<div class="col-sm-7">
+			<textarea id="textarea-usercustom-code" class="form-control"></textarea>
+		</div>
+	</div>
+</div>
+<span class="help-block pull-right"><a target="_blank" href="https://github.com/benweet/stackedit/blob/master/doc/developer-guide.md#developer-guide">More info</a></span></div>
+	</div>
+</div>
+</div>
+						<span class="help-block pull-right"><a target="_blank" href="https://github.com/benweet/stackedit/blob/master/doc/developer-guide.md#developer-guide">Create
+								your own extension...</a></span>
+					</div>
+					<div class="tab-pane" id="tabpane-settings-utils">
+						<div class="tab-pane-button-container">
+							<a href="https://stackedit.io/editor#" class="btn btn-block btn-default action-welcome-file" data-dismiss="modal"><i class="icon-help-circled"></i>
+								Hello! document</a> <a href="https://stackedit.io/editor#" class="btn btn-block btn-default action-welcome-tour" data-dismiss="modal"><i class="icon-help-circled"></i> Welcome tour</a>
+						</div>
+						<div class="tab-pane-button-container">
+							<a href="https://stackedit.io/editor#" class="btn btn-block btn-default action-import-docs-settings"><i class="icon-cog-alt"></i> Import docs &amp; settings</a> <a href="https://stackedit.io/editor#" class="btn btn-block btn-default action-export-docs-settings" data-dismiss="modal"><i class="icon-cog-alt"></i>
+								Export docs &amp; settings</a> <input type="file" id="input-file-import-docs-settings" class="hide">
+						</div>
+						<div class="tab-pane-button-container">
+							<a href="https://stackedit.io/editor#" class="btn btn-block btn-default action-default-settings" data-dismiss="modal"><i class="icon-wrench"></i>
+								Load default settings</a> <a href="https://stackedit.io/editor#" class="btn btn-block btn-default" data-dismiss="modal" data-toggle="modal" data-target=".modal-app-reset"><i class="icon-fire"></i> Reset application</a> <a target="_blank" href="https://stackedit.io/recovery.html" class="btn btn-block btn-default"><i class="icon-medkit"></i> StackEdit recovery</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+				<a href="https://stackedit.io/editor#" class="btn btn-primary action-apply-settings" data-dismiss="modal">OK</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-non-unique">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<h2 class="modal-title">Ooops...</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>StackEdit has stopped because another instance was running in
+					the same browser.</p>
+				<blockquote>
+                    <p>If you want to reopen StackEdit, click on
+					"Reload".</p>
+                </blockquote>
+			</div>
+			<div class="modal-footer">
+				<a href="javascript:window.location.reload();" class="btn btn-primary">Reload</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-redirect-confirm">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<h2 class="modal-title">Redirection</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+			    <p class="redirect-msg"></p>
+				<blockquote>
+                    <p>Please click <b>OK</b> to proceed.</p>
+                </blockquote>
+			</div>
+			<div class="modal-footer">
+				<a class="btn btn-default" data-dismiss="modal">Cancel</a>
+				<a class="btn btn-primary action-redirect-confirm" data-dismiss="modal">OK</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-app-reset">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<h2 class="modal-title">Reset application</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>This will delete all your local documents.</p>
+				<blockquote><b>Are you sure?</b></blockquote>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+				<a href="https://stackedit.io/editor#" class="btn btn-primary action-app-reset" data-dismiss="modal">OK</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-import-docs-settings">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<h2 class="modal-title">Import documents and settings</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>This will delete all existing local documents.</p>
+				<blockquote><b>Are you sure?</b></blockquote>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default" data-dismiss="modal">Cancel</a>
+				<a href="https://stackedit.io/editor#" class="btn btn-primary action-import-docs-settings-confirm" data-dismiss="modal">OK</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-add-google-drive-account">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<h2 class="modal-title">Add Google Drive account</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>To perform this request, you need to configure another Google Drive account in StackEdit.</p>
+				<blockquote><b>Do you want to proceed?</b></blockquote>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-default action-remove-google-drive-state" data-dismiss="modal">No</a>
+				<a href="https://stackedit.io/editor#" class="btn btn-primary action-add-google-drive-account" data-dismiss="modal">Yes</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade modal-sponsor-only">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<h2 class="modal-title">Sponsor only!</h2>
+			<a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+			<div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+				<p>This feature is restricted to sponsor users as it's a web service hosted on Amazon EC2.
+                    Note that sponsoring StackEdit would cost you only $5/year.</p>
+				<p>To see how a PDF looks <a target="_blank" href="https://stackedit.io/Welcome%20document.pdf">click here</a>.</p>
+				<blockquote>
+                    <p><b>Tip:</b> PDFs are fully customizable via Settings&gt;Advanced&gt;PDF template/options.</p>
+                </blockquote>
+			</div>
+			<div class="modal-footer">
+				<a href="https://stackedit.io/editor#" class="btn btn-primary" data-dismiss="modal">Close</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="dropboxjs" data-app-key="x0k2l8puemfvg0o"></div>
+<div class="modal modal-about"><div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <img height="64" data-stackedit-src="logo.svg" src="./Favorite Restaurant.md_files/logo.svg">
+        <a class="dialog-header-message" href="https://stackedit.io/app" target="_blank"><i class="icon-megaphone"></i> Switch to StackEdit 5 now!</a></div>
+        <div class="modal-body"><div class="alert alert-danger">Please consider <a href="https://stackedit.io/editor#">sponsoring StackEdit</a> for $5/year (or <a href="https://stackedit.io/editor#">sign in</a> if you're already a sponsor).</div>
+            <div class="pull-right">
+                <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./Favorite Restaurant.md_files/tweet_button.4f8aea4342a4ada72cba2bdffcff6b4d.en.html" data-url="https://stackedit.io" style="position: static; visibility: visible; width: 1px; height: 1px;"></iframe>
+            </div>
+            <dl>
+                <dt>About:</dt>
+                <dd>
+                    <a target="_blank" href="https://github.com/benweet/stackedit/">GitHub
+						project</a> /
+                    <a target="_blank" href="https://github.com/benweet/stackedit/issues">issue
+						tracker</a>
+                    <br>
+                    <a target="_blank" href="https://chrome.google.com/webstore/detail/stackedit/iiooodelglhkcpgbajoejffhijaclcdg">Chrome
+						app</a> (thanks for your review!)
+                    <br>
+                    <a target="_blank" href="https://twitter.com/stackedit/">Follow on Twitter</a>
+                    <br>
+                    <a target="_blank" href="https://www.facebook.com/stackedit/">Follow
+						on Facebook</a>
+                    <br>
+                    <a target="_blank" href="https://plus.google.com/110816046787593496375" rel="publisher">Follow on Google+</a>
+                    <br>
+				</dd>
+			</dl>
+			<dl>
+				<dt>Developers:</dt>
+				<dd>
+					<a target="_blank" href="https://twitter.com/benweet">Benoit Schweblin</a><br>
+					Pete Eigel (contributor)<br>
+					wiibaa (contributor)<br>
+                    <a target="_blank" href="http://www.hugwebdesign.com/">Daniel Hug</a> (contributor)<br>
+                    <a target="_blank" href="https://github.com/kmb32123">Kevin Brey</a> (themer)<br>
+                </dd>
+			</dl>
+            <p>
+                With special thanks to <a target="blank" href="http://www.smileupps.com/">Smileupps</a> for CouchDB hosting.
+            </p>
+			<dl>
+				<dt>Sponsorship:</dt>
+				<dd>
+                    <a href="https://stackedit.io/editor#" class="sponsorship-button"><img height="30" data-stackedit-src="button.svg" src="./Favorite Restaurant.md_files/button.svg"></a>
+				</dd>
+			</dl>
+			<p>
+				StackEdit 4.3.22 – <a target="_blank" href="https://stackedit.io/privacy_policy.html">Privacy Policy</a><br> Copyright 2013-2014 <a target="_blank" href="https://twitter.com/benweet">Benoit
+					Schweblin</a><br> Licensed under an <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">Apache
+					License</a>
+			</p>
+		</div>
+		<div class="modal-footer">
+			<a href="https://stackedit.io/editor#" class="btn btn-primary" data-dismiss="modal">Close</a>
+		</div>
+	</div>
+</div>
+</div><div class="comments-popover"></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Favorite Restaurant.md_files/widget_iframe.4f8aea4342a4ada72cba2bdffcff6b4d.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe style="width:1px;height:1px;position:absolute;top:-100px" src="./Favorite Restaurant.md_files/authorize.html"></iframe></body><input style="width:1px;height:1px;border:none;margin:0;padding:0;" tabindex="-1"></html>
